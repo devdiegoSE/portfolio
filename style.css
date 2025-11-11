@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+:root {
+    --cor-bg: #f5f5f5;
+    --cor-texto: #222;
+    --cor-primaria: #0066ff;
+    --cor-secundaria: #0044aa;
+    --cor-card: #fff;
+}
+
+body.dark {
+    --cor-bg: #121212;
+    --cor-texto: #eee;
+    --cor-primaria: #4dabf7;
+    --cor-secundaria: #1a73e8;
+    --cor-card: #1f1f1f;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-bg);
+    color: var(--cor-texto);
+    transition: background 0.3s, color 0.3s;
+}
+
+header.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    background: var(--cor-primaria);
+    color: #fff;
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #d1e0ff;
+}
+
+#toggleTema {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+}
+
+.container h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: var(--cor-card);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--cor-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--cor-primaria);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.card .btn:hover {
+    background: var(--cor-secundaria);
+}
+
+#btnTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background: var(--cor-primaria);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 0.9rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#btnTopo:hover {
+    background: var(--cor-secundaria);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--cor-primaria);
+    color: #fff;
+}
