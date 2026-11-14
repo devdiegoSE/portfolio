@@ -3,67 +3,97 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de Diego Araujo Santos, desenvolvedor front-end júnior em transição, vindo de operações aéreas e suporte técnico." />
     <title>Portfólio | Diego Araujo</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header class="header">
         <h1>Diego Araujo Santos</h1>
-        <p>Desenvolvedor Front-End Júnior</p>
+        <p>Desenvolvedor Front-End Júnior em transição</p>
         <nav>
             <ul class="menu">
                 <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <button id="toggleTema">🌙</button>
+        <button id="toggleTema" title="Alternar tema" aria-label="Alternar entre tema claro e escuro">🌙</button>
     </header>
 
-    <section id="sobre" class="container">
-        <h2>Sobre mim</h2>
-        <p>
-            Sou profissional de tecnologia em transição para o desenvolvimento front-end. Tenho experiência com HTML, CSS, JavaScript e estou aprendendo React. Busco criar interfaces modernas, funcionais e responsivas.
-        </p>
-    </section>
+    <main>
+        <section id="sobre" class="container">
+            <h2>Sobre mim</h2>
+            <p>
+                Venho de operações aéreas e suporte técnico e estou em transição para o desenvolvimento front-end. Sou formado em Análise e Desenvolvimento de Sistemas, tenho base em HTML e CSS e estou aprofundando JavaScript e React com projetos práticos. Busco minha primeira oportunidade como Desenvolvedor Front-End Júnior.
+            </p>
+            <!-- Quando o currículo em PDF estiver na pasta do projeto, remova as marcas de comentário da linha abaixo:
+            <p><a href="curriculo.pdf" class="btn" download>Baixar currículo</a></p>
+            -->
+        </section>
 
-    <section id="habilidades" class="container">
-        <h2>Habilidades</h2>
-        <ul class="skills">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript (ES6+)</li>
-            <li>React (em aprendizado)</li>
-            <li>Git & GitHub</li>
-            <li>Figma (básico)</li>
-        </ul>
-    </section>
+        <section id="trajetoria" class="container">
+            <h2>Trajetória</h2>
+            <ul>
+                <li><strong>Operações aéreas:</strong> despachante de voo, em uma rotina com prazos, atenção a detalhes e normas de segurança.</li>
+                <li><strong>Helptech (desde 2020):</strong> suporte técnico e manutenção de computadores e redes, com atendimento remoto e presencial a clientes domésticos e corporativos.</li>
+                <li><strong>Formação:</strong> Tecnólogo em Análise e Desenvolvimento de Sistemas, Estácio, concluído em 2024.</li>
+            </ul>
+        </section>
 
-    <section id="projetos" class="container">
-        <h2>Projetos</h2>
-        <div class="projetos-grid">
-            <div class="card">
-                <h3>🎬 Movie Finder</h3>
-                <p>Aplicação React que consome a API TheMovieDB para listar e buscar filmes.</p>
-                <a href="#" class="btn">Ver projeto</a>
+        <section id="habilidades" class="container">
+            <h2>Habilidades</h2>
+            <ul class="skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (em estudo)</li>
+                <li>React (em estudo)</li>
+                <li>Git e GitHub</li>
+                <li>Figma (básico)</li>
+                <li>Suporte técnico e redes</li>
+            </ul>
+        </section>
+
+        <section id="projetos" class="container">
+            <h2>Projetos</h2>
+            <div class="projetos-grid">
+                <div class="card">
+                    <h3>✈️ Painel de aeroporto</h3>
+                    <p>Painel de voos com dados fictícios, feito em HTML, CSS e JavaScript e depois em React. Em construção.</p>
+                </div>
+                <div class="card">
+                    <h3>🛠️ Site da Helptech</h3>
+                    <p>Site do meu negócio de suporte técnico e manutenção de computadores. Em construção.</p>
+                </div>
+                <div class="card">
+                    <h3>🔐 Tela de login</h3>
+                    <p>Projeto de estudo de HTML e CSS.</p>
+                    <a href="https://github.com/devdiegoSE/login-page" class="btn" target="_blank" rel="noopener noreferrer">Ver código</a>
+                </div>
+                <div class="card">
+                    <h3>🤖 Imersão Dev com Google Gemini</h3>
+                    <p>Meu primeiro projeto com apoio de IA.</p>
+                    <a href="https://github.com/devdiegoSE/gemini-dev-immersion" class="btn" target="_blank" rel="noopener noreferrer">Ver código</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contato" class="container">
-        <h2>Contato</h2>
-        <ul class="contato-lista">
-            <li>📞 (79) 99198-2733</li>
-            <li>📧 <a href="mailto:diegoaraujosantos10@gmail.com">diegoaraujosantos10@gmail.com</a></li>
-            <li>💼 <a href="https://www.linkedin.com/in/diego-araujo-developer" target="_blank">LinkedIn</a></li>
-        </ul>
-    </section>
+        <section id="contato" class="container">
+            <h2>Contato</h2>
+            <ul class="contato-lista">
+                <li>📧 <a href="mailto:diegoaraujosantos10@gmail.com">diegoaraujosantos10@gmail.com</a></li>
+                <li>💼 <a href="https://www.linkedin.com/in/diego-araujo-developer" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li>💻 <a href="https://github.com/devdiegoSE" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </section>
+    </main>
 
-    <button id="btnTopo" title="Voltar ao topo">⬆</button>
+    <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">⬆</button>
 
     <footer>
-        <p>© 2025 Diego Araujo. Todos os direitos reservados.</p>
+        <p>© 2026 Diego Araujo Santos. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
