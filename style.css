@@ -108,7 +108,7 @@ header.header {
     text-align: center;
 }
 
-.card .btn {
+.btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
@@ -119,8 +119,12 @@ header.header {
     transition: background 0.3s;
 }
 
-.card .btn:hover {
+.btn:hover {
     background: var(--cor-secundaria);
+}
+
+body.dark .btn {
+    color: #121212;
 }
 
 #btnTopo {
